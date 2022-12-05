@@ -1,0 +1,231 @@
+/*Колір основного шрифту #2E2F42
+Колір основного фону  #ffffff
+додатковий фон та літери #2E2F42
+
+    */
+
+:root {
+    --base-color-text: #2E2F42;
+    --maine-color-background: #ffffff;
+    --color-style-logo: #4D5AE5;
+    --color-decoration-text: #434455;
+    --border-color: #E7E9FC;
+    --additional-background-color: #F4F4FD;
+    --active-color-button: #404BBF;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--base-color-text);
+    background-color: var(--maine-color-background);
+}
+
+/*_________Header____________*/
+
+.page-header {
+    background: var(--maine-color-background);
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--base-color-text);
+  }
+
+.logo-web {
+    color: var(--color-style-logo);
+}
+
+.list {
+    list-style: none;
+}
+
+.site-nav {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--base-color-text)
+}
+
+.link:hover, .link:focus {
+    color: var(--color-decoration-text);
+}
+
+.link:active {
+    color: var(--color-style-logo);
+}
+
+.contact {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-decoration-text);
+}
+
+
+/*__________Hero section_________*/
+
+.hero {
+    background-color: var(--base-color-text);
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--maine-color-background);
+}
+
+.hero-button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.04em;
+    background-color: var(--color-style-logo);
+    color: var(--maine-color-background);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.hero-button:hover {
+    background-color: var(--color-style-logo);
+}
+
+.hero-button:active {
+    background-color: var(--active-color-button);
+}
+
+/* ____________Benefits section__________*/
+
+.benefits-heading, .examples-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.benefit-subtitle, .resume-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--base-color-text);
+}
+
+.benefit-details, .resume-specialty {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-decoration-text);
+}
+
+/*____________Illustrations section__________*/
+
+.illustrations-title, .resumes-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--base-color-text);
+}
+
+/*_________Resumes section___________*/
+
+.resumes {
+    background-color: var(--additional-background-color);
+}
+
+.resumes-item {
+    background-color: var(--maine-color-background);
+}
+
+/*Footer section*/
+
+.footer {
+    background-color: var(--base-color-text);
+}
+
+.footer-logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--additional-background-color);
+}
+
+.footer-logo-web {
+    color: var(--color-style-logo);
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--border-color);
+}
+
+/* Portfolio page: Section row */
+
+.examples-button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: var(--additional-background-color);
+    color: var(--color-style-logo);
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.examples-button:hover, .examples-button:focus {
+    background-color: var(--color-style-logo);
+    color:var(--maine-color-background)
+}
+
+/*_______Section samples________ */
+
+.examples-link {
+    text-decoration: none;
+}
+
+.examples-subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--base-color-text);
+}
+
+.examples-filter {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-decoration-text);
+}
+
+/*  */
