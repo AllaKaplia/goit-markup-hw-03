@@ -20,6 +20,25 @@ body {
     background-color: var(--maine-color-background);
 }
 
+h1,
+h2,
+h3,
+p {
+ margin-top: 0;
+ margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
 /*_________Header____________*/
 
 .page-header {
@@ -74,6 +93,7 @@ body {
 
 .hero {
     background-color: var(--base-color-text);
+    text-align: center;
 }
 
 .hero-title {
