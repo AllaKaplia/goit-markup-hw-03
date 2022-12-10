@@ -51,8 +51,8 @@ img {
     width: 1158px;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .main-nav{
@@ -134,12 +134,13 @@ img {
 /*__________Hero section_________*/
 
 .hero {
-    background-color: var(--base-color-text);
+
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 192px;
     padding-bottom: 192px;
+    background-color: var(--base-color-text);
 }
 
 .hero-title {
