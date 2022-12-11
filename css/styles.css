@@ -133,7 +133,7 @@ img {
 
 /*__________Hero section_________*/
 
-.hero {
+.hero-section {
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
@@ -187,6 +187,7 @@ img {
 
 /* ____________Benefits section__________*/
 
+
 .benefits-heading, .examples-title {
     position: absolute;
     width: 1px;
@@ -201,19 +202,16 @@ img {
     overflow: hidden;
 }
 
+
+
 .benefits {
     display: flex;
-    flex-wrap: wrap;
-    margin-left: -12px;
+    gap: 24px;
 }
 
 .benefits .item {
-    width: 264px;
-    margin-left: 12px;
-}
-
-.benefits .item + .item {
     margin-right: 0;
+    flex-basis: calc(100% / 3 - 24px);
 }
 
 .benefit-subtitle, .resume-name {
@@ -256,7 +254,6 @@ img {
 .illustration {
     display: flex;
     gap: 24px;
-    padding-top: 72px;
 }
 
 
@@ -322,19 +319,18 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .examples-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -24px;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .examples-list > .examples-item {
-    margin-bottom: 48px;
     margin-right: 0;
-    margin-left: 24px;
     flex-basis: calc(100% / 3 - 24px);
 }
 
