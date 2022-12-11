@@ -39,12 +39,17 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /*_________Header____________*/
 
 .page-header {
     background: var(--maine-color-background);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .container {
@@ -55,12 +60,7 @@ img {
     padding-right: 15px;
 }
 
-.main-nav{
-    display: flex;
-    align-items: center;
-}
-
-.container-nav {
+.main-nav, .container-nav {
     display: flex;
     align-items: center;
 }
@@ -134,12 +134,17 @@ img {
 /*__________Hero section_________*/
 
 .hero {
-    background-color: var(--base-color-text);
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 192px;
     padding-bottom: 192px;
+    background-color: var(--base-color-text);
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .hero-title {
@@ -182,11 +187,6 @@ img {
 
 /* ____________Benefits section__________*/
 
-.benefits {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
 .benefits-heading, .examples-title {
     position: absolute;
     width: 1px;
@@ -199,6 +199,21 @@ img {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+}
+
+.benefits .item {
+    width: 264px;
+    margin-left: 12px;
+}
+
+.benefits .item + .item {
+    margin-right: 0;
 }
 
 .benefit-subtitle, .resume-name {
@@ -220,7 +235,16 @@ img {
 
 /*____________Illustrations section__________*/
 
+.illustrations {
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 0;
+}
+
 .illustrations-title, .resumes-title {
+    margin-top: 0;
+    margin-bottom: 72px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
@@ -229,19 +253,41 @@ img {
     color: var(--base-color-text);
 }
 
+.illustration {
+    display: flex;
+    gap: 24px;
+    padding-top: 72px;
+}
+
+
 /*_________Resumes section___________*/
 
 .resumes {
     background-color: var(--additional-background-color);
 }
 
-.resumes-item {
+.resumes-list {
+    display: flex;
+    gap: 24px;
+ }
+
+.container-resume {
+    display: block;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    width: 264px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
     background-color: var(--maine-color-background);
 }
 
 /*Footer section*/
 
 .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
     background-color: var(--base-color-text);
 }
 
@@ -261,6 +307,8 @@ img {
 }
 
 .footer-text {
+    width: 264px;
+    margin-top: 16px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -269,7 +317,32 @@ img {
 
 /* Portfolio page: Section row */
 
+.examples-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding-bottom: 72px;
+}
+
+.examples-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -24px;
+}
+
+.examples-list > .examples-item {
+    margin-bottom: 48px;
+    margin-right: 0;
+    margin-left: 24px;
+    flex-basis: calc(100% / 3 - 24px);
+}
+
 .examples-button {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 12px 24px;
+
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -278,8 +351,6 @@ img {
     background-color: var(--additional-background-color);
     color: var(--color-style-logo);
     cursor: pointer;
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
 }
 
 .examples-button:hover, .examples-button:focus {
@@ -289,11 +360,29 @@ img {
 
 /*_______Section samples________ */
 
+
+
 .examples-link {
     text-decoration: none;
 }
 
+.container-example {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    width: 360px;
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.container-examples-list {
+
+}
+
 .examples-subtitle {
+    margin-bottom: 8px;
+
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
