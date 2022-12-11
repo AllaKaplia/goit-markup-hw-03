@@ -47,6 +47,9 @@ img {
 
 .page-header {
     background: var(--maine-color-background);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .container {
@@ -282,13 +285,10 @@ img {
 /*Footer section*/
 
 .footer {
-    background-color: var(--base-color-text);
     padding-top: 100px;
     padding-bottom: 100px;
-}
 
-.container-footer {
-    width: 264px;
+    background-color: var(--base-color-text);
 }
 
 .footer-logo {
@@ -307,6 +307,7 @@ img {
 }
 
 .footer-text {
+    width: 264px;
     margin-top: 16px;
     font-size: 16px;
     line-height: 1.5;
@@ -316,7 +317,32 @@ img {
 
 /* Portfolio page: Section row */
 
+.examples-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding-bottom: 72px;
+}
+
+.examples-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -24px;
+}
+
+.examples-list > .examples-item {
+    margin-bottom: 48px;
+    margin-right: 0;
+    margin-left: 24px;
+    flex-basis: calc(100% / 3 - 24px);
+}
+
 .examples-button {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 12px 24px;
+
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -325,8 +351,6 @@ img {
     background-color: var(--additional-background-color);
     color: var(--color-style-logo);
     cursor: pointer;
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
 }
 
 .examples-button:hover, .examples-button:focus {
@@ -336,17 +360,29 @@ img {
 
 /*_______Section samples________ */
 
-.examples-items {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-}
+
 
 .examples-link {
     text-decoration: none;
 }
 
+.container-example {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    width: 360px;
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.container-examples-list {
+
+}
+
 .examples-subtitle {
+    margin-bottom: 8px;
+
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
